@@ -3,19 +3,20 @@ var right = 0;
 function Quastion(mystring) {
     var Q = prompt(mystring);
     console.log(Q);
-    if (Q.toLowerCase == 'y') {
+    if (Q.toLowerCase() == 'y' || Q.toLowerCase() == 'yes') {
         console.log(right);
         right = right + 1;
         return true;
     } else {
         console.log(wrong);
-        wrong + wrong + 1;
+        wrong = wrong + 1;
         return false;
     }
 }
 
 var UserName = prompt("What is your name?");
 alert(`Wellcome to my Website ${UserName}`);
+
 if (Quastion("Do you think that I Like Coffee ??") == true) {
     alert(`Yeah ${UserName} that is right I love Coffee`)
 } else {
