@@ -1,105 +1,88 @@
 'use strict' 
 var wrong = 0;
 var right = 0;
-// function Quastion(mystring) {
-//     var Q = prompt(mystring);
-//     console.log(Q);
-//     if (Q.toLowerCase() == 'y' || Q.toLowerCase() == 'yes') {
-//         // console.log(right);
-//         // right = right + 1;
-//         return true;
-//     } else {
-//         // console.log(wrong);
-//         // wrong = wrong + 1;
-//         return false;
-//     }
-// }
 
 var UserName = prompt("What is your name?");
 alert(`Wellcome to my Website ${UserName}`);
 
-var Q1 = prompt("Do you think that I Like Coffee ??");
-console.log(Q1);
-if (Q1.toLowerCase() == 'y' || Q1.toLowerCase() == 'yes') {
-    alert(`Yeah ${UserName} that is right I love Coffee`)
-    right = right + 1;
-} else {
-    alert(`Sorry ${UserName} That is Wrong`)
-    wrong = wrong + 1;
+var ArrTrue = ['Do you think that I Like Coffee ??', "Do you think that I whatched 'Lacasa De Papel' ??", "Do you think that I can solve Robik's Cube in 2 Minites ??"];
+var ArrFalse = ['Do you think that I Watch animations stuff ??', 'Do you think that I Watched GOT ??'];
+
+for (let index = 0; index < ArrTrue.length; index++) {
+    var Q = prompt(ArrTrue[index]);
+    console.log(Q);
+    if (Q.toLowerCase() == 'y' || Q.toLowerCase() == 'yes') {
+        alert(`Yeah ${UserName} that is right `)
+        right = right + 1;
+    } else {
+        alert(`Sorry ${UserName} That is Wrong`)
+        wrong = wrong + 1;
+    }
 }
-// /********************************************************** */
-var Q2 = prompt("Do you think that I whatched 'Lacasa De Papel' ??");
-console.log(Q2);
-if (Q2.toLowerCase() == 'y' || Q2.toLowerCase() == 'yes') {
-    alert(`Yeah ${UserName} that is right`)
-    right = right + 1;
-} else {
-    alert(`Sorry ${UserName} That is Wrong`)
-    wrong = wrong + 1;
+for (let index = 0; index < ArrFalse.length; index++) {
+    var Q = prompt(ArrFalse[index]);
+    console.log(Q);
+    if (Q.toLowerCase() == 'y' || Q.toLowerCase() == 'yes') {
+        alert(`No ${UserName} grow up it's for kids`)
+        wrong = wrong + 1;
+    } else {
+        alert(`Yeah ${UserName} That is right`)
+        right = right + 1;
+    }
+
 }
-// /********************************************************** */
-var Q3 = prompt("Do you think that I can solve Robik's Cube in 2 Minites ??");
-console.log(Q3);
-if (Q3.toLowerCase() == 'y' || Q3.toLowerCase() == 'yes') {
-    alert(`Yeah ${UserName} that is right `)
-    right = right + 1;
-} else {
-    alert(`Sorry ${UserName} That is Wrong`)
-    wrong = wrong + 1;
-}
-// /********************************************************** */
-var Q4 = prompt("Do you think that I Watch animations stuff ??");
-console.log(Q4);
-if (Q4.toLowerCase() == 'y' || Q4.toLowerCase() == 'yes') {
-    alert(`No ${UserName} grow up it's for kids`)
-    wrong = wrong + 1;
-} else {
-    alert(`Yeah ${UserName} That is right`)
-    right = right + 1;
-}
-// /********************************************************** */
-var Q5 = prompt("Do you think that I Watched GOT ??");
-console.log(Q5);
-if (Q5.toLowerCase() == 'y' || Q5.toLowerCase() == 'yes') {
-    alert(`No ${UserName} I Didn't and I wont`)
-    wrong = wrong + 1;
-} else {
-    alert(`Ofcourse I didn't ${UserName} That is right`)
-    right = right + 1;
-}
-// /********************************************************** */
-// if (Quastion("") == true) {
-//     alert(`No ${UserName} I Didn't and I wont`)
-//     wrong = wrong + 1;
-// } else {
-//     alert(`Ofcourse I didn't ${UserName} That is right`)
+
+
+// var Q1 = prompt("Do you think that I Like Coffee ??");
+// console.log(Q1);
+// if (Q1.toLowerCase() == 'y' || Q1.toLowerCase() == 'yes') {
+//     alert(`Yeah ${UserName} that is right I love Coffee`)
 //     right = right + 1;
+// } else {
+//     alert(`Sorry ${UserName} That is Wrong`)
+//     wrong = wrong + 1;
 // }
-// /********************************************************** */
-// if (Quastion("") == true) {
+// // /********************************************************** */
+// var Q2 = prompt("Do you think that I whatched 'Lacasa De Papel' ??");
+// console.log(Q2);
+// if (Q2.toLowerCase() == 'y' || Q2.toLowerCase() == 'yes') {
 //     alert(`Yeah ${UserName} that is right`)
 //     right = right + 1;
 // } else {
 //     alert(`Sorry ${UserName} That is Wrong`)
 //     wrong = wrong + 1;
 // }
-// /********************************************************** */
-// if (Quastion("") == true) {
-//     alert(`Yeah ${UserName} that is right`)
+// // /********************************************************** */
+// var Q3 = prompt("Do you think that I can solve Robik's Cube in 2 Minites ??");
+// console.log(Q3);
+// if (Q3.toLowerCase() == 'y' || Q3.toLowerCase() == 'yes') {
+//     alert(`Yeah ${UserName} that is right `)
 //     right = right + 1;
 // } else {
 //     alert(`Sorry ${UserName} That is Wrong`)
 //     wrong = wrong + 1;
 // }
-// /********************************************************** */
-// if (Quastion("") == true) {
+// // /********************************************************** */
+// var Q4 = prompt("Do you think that I Watch animations stuff ??");
+// console.log(Q4);
+// if (Q4.toLowerCase() == 'y' || Q4.toLowerCase() == 'yes') {
 //     alert(`No ${UserName} grow up it's for kids`)
 //     wrong = wrong + 1;
 // } else {
 //     alert(`Yeah ${UserName} That is right`)
 //     right = right + 1;
 // }
-/********************************************************** */
+// // /********************************************************** */
+// var Q5 = prompt("Do you think that I Watched GOT ??");
+// console.log(Q5);
+// if (Q5.toLowerCase() == 'y' || Q5.toLowerCase() == 'yes') {
+//     alert(`No ${UserName} I Didn't and I wont`)
+//     wrong = wrong + 1;
+// } else {
+//     alert(`Ofcourse I didn't ${UserName} That is right`)
+//     right = right + 1;
+// }
+/************************************************************* */
 var attempt = 0;
 do {
     attempt = attempt + 1;
