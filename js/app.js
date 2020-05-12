@@ -1,3 +1,5 @@
+'use strict'
+
 var wrong = 0;
 var right = 0;
 function Quastion(mystring) {
