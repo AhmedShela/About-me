@@ -151,6 +151,14 @@ for (var index = 0; index < 6; index++) {
 if (done == false) {
     wrong = wrong + 1;
 }
+// function ArrSearch(MyValue){
+//     if (FoodQ.toLowerCase() == food[i]) {
+//         alert(`${FoodQ} is right`);
+//         right = right + 1;
+//         done = true;
+
+//     }
+// }
 
 document.getElementById('UserName').textContent = `Thank you for visiting my web ${UserName}`
 document.getElementById("result").textContent = `${right} of your answer was right and ${wrong} was worng`
