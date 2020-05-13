@@ -125,32 +125,55 @@ do {
 } while (GuisQ != '23');
 
 /*************************************************************** */
-var food = [
-    'Shaowerma',
-    'mansaf',
-    'mulukhia',
-    'oives',
-    'lazanui'
-];
+// var food = [
+//     'Shaowerma',
+//     'mansaf',
+//     'mulukhia',
+//     'oives',
+//     'lazanui'
+// ];
 // console.log(`right is ${right}`);
 // console.log(`wrong is ${wrong}`);
-var done = false
-for (var index = 0; index < 6; index++) {
-    if (done == false) {
-        var FoodQ = prompt("What is my favorit food ?");
-        for (var i = 0; i < food.length; i++) {
-            if (FoodQ.toLowerCase() == food[i]) {
-                alert(`${FoodQ} is right`);
-                right = right + 1;
-                done = true;
+// var done = false
+// for (var index = 0; index < 6; index++) {
+//     if (done == false) {
+//         var FoodQ = prompt("What is my favorit food ?");
+//       function 
+//         for (var i = 0; i < food.length; i++) {
+//             if (FoodQ.toLowerCase() == food[i]) {
+//                 alert(`${FoodQ} is right`);
+//                 right = right + 1;
+//                 done = true;
 
+//             }
+//         }
+//     }
+// }
+// if (done == false) {
+//     wrong = wrong + 1;
+// }
+function questionSeven() {
+    var userFavFruit = ['apple', 'strawberry', 'orange', 'grape', 'watermelon'];
+
+    for (var i = 0; i < 6; i++) {
+        var userAnsw = prompt('Can you guess my favorite fruit?');
+        var guess = userAnsw.toLowerCase();
+
+        for (var j = 0; j < userFavFruit.length; j++){
+            if (guess === userFavFruit[j]) {
+                alert('Congrats you got it right!!!');
+                score++;
+                i = 6;
+                break;
             }
+        }
+        if (i !==6){
+            alert('Sorry wrong answer, try again');
         }
     }
 }
-if (done == false) {
-    wrong = wrong + 1;
-}
+
+questionSeven();
 
 document.getElementById('UserName').textContent = `Thank you for visiting my web ${UserName}`
 document.getElementById("result").textContent = `${right} of your answer was right and ${wrong} was worng`
