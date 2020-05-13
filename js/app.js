@@ -10,7 +10,7 @@ var ArrFalse = ['Do you think that I Watch animations stuff ??', 'Do you think t
 
 for (let index = 0; index < ArrTrue.length; index++) {
     var Q = prompt(ArrTrue[index]);
-    console.log(Q);
+    // console.log(Q);
     if (Q.toLowerCase() == 'y' || Q.toLowerCase() == 'yes') {
         alert(`Yeah ${UserName} that is right `)
         right = right + 1;
@@ -21,7 +21,7 @@ for (let index = 0; index < ArrTrue.length; index++) {
 }
 for (let index = 0; index < ArrFalse.length; index++) {
     var Q = prompt(ArrFalse[index]);
-    console.log(Q);
+    // console.log(Q);
     if (Q.toLowerCase() == 'y' || Q.toLowerCase() == 'yes') {
         alert(`No ${UserName} grow up it's for kids`)
         wrong = wrong + 1;
@@ -86,7 +86,7 @@ for (let index = 0; index < ArrFalse.length; index++) {
 var attempt = 0;
 do {
     attempt = attempt + 1;
-    console.log(attempt)
+    // console.log(attempt)
     if (attempt > 4) {
         wrong = wrong + 1;
         break;
@@ -132,8 +132,8 @@ var food = [
     'oives',
     'lazanui'
 ];
-console.log(`right is ${right}`);
-console.log(`wrong is ${wrong}`);
+// console.log(`right is ${right}`);
+// console.log(`wrong is ${wrong}`);
 var done = false
 for (var index = 0; index < 6; index++) {
     if (done == false) {
