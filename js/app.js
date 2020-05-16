@@ -37,6 +37,7 @@ do {
         wrong = wrong + 1;
         break;
     }
+    
     var GuisQ = prompt("What is my Age?!")
     var X = GuisQ - 23
     if (GuisQ - 23 == 0) {
